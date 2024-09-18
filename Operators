@@ -1,0 +1,60 @@
+public class Operators
+{
+	public static void main(String[] args) {
+		// ++ is increment operator 
+		//case1
+		int a =10;
+		System.out.println(a);
+		a=a+1;
+		System.out.println(a);
+		a++; //increment
+		System.out.println(a);
+		//case2
+		int result=a++;//after assigning increment is done so it is post increment so we will get same value
+		System.out.println(result);
+		System.out.println(a);
+		//case3
+		int res=++a;//first increment is done after assignment is done it is pre increment
+		System.out.println(res);
+		
+		// -- is decrement operator
+		//case1
+		int b=10;
+		System.out.println(b);
+		b=b-1;
+		System.out.println(b);
+		b--;//decrement
+		System.out.println(b);
+		//case2 
+		int result1=b--;//after assigning decrement is done so it is post decrement so we will get same value
+		System.out.println(result1);
+		System.out.println(b);
+		//case3
+		int res1=--b;
+		System.out.println(res1);//first decrement is done after assignment is done it is pre decrement
+		
+		//Assignment Operators = += -= *= /= %=
+		int d=10;
+		//d=d+5;
+		d+=5;
+		System.out.println(d);
+		d-=5;
+		System.out.println(d);
+		d*=2;
+		System.out.println(d);
+		d/=2;
+		System.out.println(d);
+		
+		//conditional or ternary operator 
+		// syntax var=exp?result1:result2;
+		int e=200,f=100;
+		int x=(e<f)?e:f;//if expression is false f value is assigned to x
+		System.out.println(x);
+		int y=(e>f)?e:f;//if expression is true e value is assigned to y 
+		System.out.println(y);
+		//example
+		int person_age=30;
+		String res2=(person_age>=18)?"Eligible":"Not elgible";
+		System.out.println(res2);
+	}
+}
